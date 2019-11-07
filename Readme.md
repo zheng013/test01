@@ -7,6 +7,7 @@
  2. 进入新建的repo仓库,在右边tab中找到settings
  * 点击进入settings选项,下滑找到GitHub Pages栏进行设置选择.
  * 在source选项一栏中下拉选择master branch,然后点击save.
- * 你会看到一个自动生成的预览页面网址,就成功了。
+ * 你会看到一个自动生成的预览页面网址,就成功了.
  
- 3. 想要
+ 3. 想要预览html页面
+ * 将你需要预览展示的html页面文件新建的repo中
