@@ -75,7 +75,41 @@ node-w3c-validator -i index.html
  </body>
  </html>
  ```
+4. 章节标签(表示文章/书的层级 常用的表章节的标签有哪些)
 
+  标签|用途(翻译)
+  ---|---
+  h1~h6|一级标题到六级标题
+  section|章节
+  article|文章
+  p|段落
+  header|头部
+  footer|脚部
+  main|主要内容
+  aside|旁支内容
+  div|划分（区域 块）
+  &copy|版权声明标致
+
+5. 全局属性(所有标签都拥有的属性)
+
+  标签|用途(翻译)
+  ---|---
+  class|类、标记
+  contenteditable|可直接在编辑器页面中编辑文档内容
+  hidden|隐藏元素
+  title|属性标签（显示完整内容）
+  style|元素的样式（优先级更高比css）
+  tabindex|可利用tab切换（顺序访问）
+  
+ 6. 知识点
+  * tabindex=0(利用tab键切换最后才访问)  tabindex=-1(不访问该模块)
+  * 文字过长但只想让其显示一行并出现省略号
+  ```(html)
+  style{
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;}
+  ```
 
 
 
