@@ -110,6 +110,7 @@ node-w3c-validator -i index.html
   text-overflow:ellipsis;
   overflow:hidden;}
   ```
+  * id属性标签有什么用（id 用来表示全局唯一的标签，但id的全局唯一性没有保障，就算有两个重复的 id，HTML 也不会提示我写错了）
 
 
 
