@@ -20,4 +20,4 @@
 * 负margin用于调试元素的对齐空间的给出
 * inline-block尽量将元素缩窄且依次排列，block将元素固定在一行上由其中的文本流元素决定的尺寸
 * flex会消除margin合并在使用需要注意margin边距要减半
-
+## flex-flow: row wrap     flex-direction: wrap(换行) wrap-reverse（从初始的开始点开始换行  相当于调换行的位置）
