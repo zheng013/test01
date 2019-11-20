@@ -56,6 +56,14 @@ if(m!===1)
 if(n===2) console.log('hello')  ;
 else console.log('world');
 ```
+* 相当于下面这段代码
+```(Javascript)
+if(m!===1){
+if(n===2){
+console.log('hello');} 
+ else{console.log('world')}
+}
+```
 
 
 
