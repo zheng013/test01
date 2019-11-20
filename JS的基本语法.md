@@ -64,6 +64,14 @@ console.log('hello');}
  else{console.log('world')}
 }
 ```
+* 若想让else更随上面的if，则代码需改为
+```(Javascript)
+if(m!===1){
+if(n===2){
+console.log('hello');} 
+}
+else{console.log('world');}
+```
 
 
 
