@@ -100,10 +100,13 @@ i = i + 1;
 ```(Javascript)
 var x = 3;
 for (var i = 0; i < x; i++) {
-  console.log(i);
+  console.log(i)
 }
 ```
 ## break continue
+* break语句和continue语句都具有跳转作用，可以让代码不按既有的顺序执行。
+* braek语句： 退出所有循环（但是注意是退出离自己最近的一次循环）*
+* continue语句：退出当前一次循环（可以理解为下一次）*
 ## label
 
 
