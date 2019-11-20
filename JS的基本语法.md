@@ -48,7 +48,14 @@ if(m===0){
 //...
 }
 ```
-
+* else代码块总是与离自己最近的那个if语句配对
+```(Javascript)
+var m = 1;
+var n = 2 ;
+if(m!===1)
+if(n===2) console.log('hello')  ;
+else console.log('world');
+```
 
 
 
