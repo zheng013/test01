@@ -115,5 +115,18 @@ for (var i = 0; i < x; i++) {
 lable： {语句}
 ```
 * 标签可以是任意的标识符，但不能是保留字，语句部分可以是任意语句。
-
+```(Javascript)
+foo: {
+  console.log(1);
+  break foo;
+  console.log('本行不会输出');
+}
+console.log(2)
+```
+* Q:下面这一段代码代表什么
+```(Javascript)
+{  foo:1;
+}
+```
+* A:foo代表一个标签，1为一个语句。若foo有赋值，整段代码就表示一个对象。
 
