@@ -73,12 +73,21 @@ console.log('hello');}
 else{console.log('world');}
 ```
 ## while for 语句
-
+### While
 * while(表达式){语句;}
 * 先判断while表达式的真假
 * 当while表达式为真，执行语句，执行完之后再次判断表达式的真假
 * 当while表达式为假，就执行后面的语句
 * while语句包括一个循环条件和一段代码块，只要条件为真，就不断循环执行代码块。
+```(Javascript)
+var i = 0 ;
+while( i < 100 ){
+console.log('当前的i值为:' + i);
+i = i + 1;
+}
+```
+### For循环
+* 
 ## break continue
 ## label
 
