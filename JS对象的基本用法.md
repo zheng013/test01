@@ -37,6 +37,11 @@ let key ='name',obj.key='frank' // 错误 因为 obj.key 等价于 obj['key']
 Object.assign(obj,{name:'frank',age:18})
 ```
 
+## 'name' in obj 和 obj.hasOwnProperty('name')的区别
+
+* 'name' in obj 是判断一个属性是否在对象中，不管是不是在对象地原型中。
+*  obj.hasOwnProperty('name')只能判断属性是否在自身的对象中，而不是原型中。
+
 
 
 
