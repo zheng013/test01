@@ -32,3 +32,17 @@ obj['na'+'me']='frank'
 let key ='name',obj[key]='frank'
 let key ='name',obj.key='frank' // 错误 因为 obj.key 等价于 obj['key']
 ```
+* 批量赋值
+```(JavaScript)
+Object.assign(obj,{name:'frank',age:18})
+```
+
+
+
+
+
+
+
+
+
+
