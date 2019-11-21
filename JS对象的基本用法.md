@@ -21,3 +21,14 @@ obj.name  obj['name']  //查看某个对象的具体的属性
 Object.values(obj)  //查看对象的所有属性值
 Object.entries（obj）  //查看对象所有属性和属性值
 ```
+## 如何修改或增加对象的属性（写属性）
+* 直接赋值
+```(JavaScript)
+let obj = { name: 'frank'} //name是字符串
+obj.name='jack' //name是字符串
+obj['name']='paul'
+obj[name] = 'frank' // 错误，因为name变量值不确定
+obj['na'+'me']='frank'
+let key ='name',obj[key]='frank'
+let key ='name',obj.key='frank' // 错误 因为 obj.key 等价于 obj['key']
+```
