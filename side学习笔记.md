@@ -48,3 +48,49 @@ return （<div>
 
 this在普通函数中代表一个参数，取决于你如何去调用，所以值会有所不同。
 而箭头函数不支持this，this代表它的原始值。
+
+2020  -1-17-   10：28
+
+
+由于赋值语句只在运行时执行，而function生成的匿名函数会在代码被执行之前就
+被解析（hoisted），故可写在当前上下文的任意一个地方，因为其也可以被正常的调用。
+
+
+存在一个解析的顺序问题。
+call（this指向的对象，后面的参数只能够一个一个地去写）
+apply(this指向的对象，后面的参数用一个数组去表示)
+
+因为函数是 JavaScript 中唯一拥有自身作用域的结构，因此闭包的创建依赖于函数。
+for(var i = 0; i < 10; i++) {
+    (function(e) {
+        setTimeout(function() {
+            console.log(e);  
+        }, 1000);
+    })(i);
+}
+自执行匿名函数。
+arguments是一个管理所有传递到函数参数的一个参数列表的伪数组
+这个参数列表的数组并不会从Array.prototype上继承数组的属性
+有for循环遍历的方法，利用Array.prototype.slice.call(arguments)
+这个转换较慢，不推荐。
+
+v-pre不会对内容进行一个替换，只是会显示相对应有东西
+不管是vue还是react在模板下都需要有一个包围的div对齐
+<ul>
+<li v-for="(u,index) in users" :key="index"> 这里的key是为了便于区分才加上的
+一般我们会用id来进行绑定识别。
+{{index}} {{u.name}}
+</li>
+</ul>
+
+廖雪峰的教程
+
+-------------------------------arguments往下函数之前的传参
+
+
+项目的建立
+1.yarn global add vue@cli 
+2.vue create 目录名
+3.cd 
+4.yarn serve 
+5.Vue.use(Vuerounter)
